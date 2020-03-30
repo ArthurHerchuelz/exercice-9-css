@@ -1,74 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8"/>
-    <title>exercice 9</title>
-    <link rel="stylesheet" href="assets/css/style.css"/>
-  </head>
-  <body>
-    <form class="formulaire" action="" method="post">
-        <fieldset class="Identity">
-            <legend>Votre identité</legend>
-            <ol>
-              <li>
-                <label for="Name">Nom:</label>
-                  <input type="text" id="Name" name="user_name" placeholder="Nom"/>
-              </li>
-              <li>
-                <label for="Prénom">Prénom:</label>
-                  <input type="text" name="user_forname" id="forname" placeholder="Prénom"/>
-              </li>
-              <li>
-                <label for="Adresse mail">Adresse mail:</label>
-                  <input type="email" name="user_email" id="email" placeholder="Adresse mail"/>
-              </li>
-            </ol>
-        </fieldset>
-        <fieldset class="Address">
-            <legend>Adresse de livraison</legend>
-              <ol>
-                <li>
-                  <label for="Address">Adresse:</label>
-                    <textarea  name="address" id="address"></textarea>
-                </li>
-                <li>
-                  <label for="Code postal">Code postal:</label>
-                    <input type="text" name="code postal" placeholder="code postal" id="code postal">
-                </li>
-                <li>
-                  <label for="city">Ville:</label>
-                    <input type="text" name="city" placeholder="Ville" id="city">
-                </li>
-              </ol>
-        </fieldset>
-        <fieldset class="Informations">
-            <legend>Informations de réglement</legend>
-              <ol>
-                <li>
-                  <label for="Type de carte bancaire">Type de carte bancaire:
-                  </label><br>
-                    <input type="radio" name="card" id="Visa">
-                  <label for="Visa">Visa
-                  </label><br>
-
-                    <input type="radio" name="card" id="Mastercard">
-                  <label for="Mastercard">Mastercard
-                  </label>
-                <li>
-                  <label for="card number">Numéro de carte:</label>
-                    <input type="text" name="card number" placeholder="Numéro de carte" id="card number">
-                </li>
-                <li>
-                  <label for="Code de sécurité">Code de sécurité:</label>
-                    <input type="text" name="Code sécurité" placeholder="Code de sécurité" id="code de sécurité">
-                </li>
-                <li>
-                  <label for="Nom du titulaire">Nom du titulaire:</label>
-                    <input type="text" name="Nom du titulaire" placeholder="Nom du titulaire" id="nom du titulaire">
-                </li>
-              </ol>
-        </fieldset>
-        <input type="submit" name="submit" value="J'achète!" id="submit">
-  </form>
+<head>
+  <meta charset="utf-8"/>
+  <title>exercice 9</title>
+  <link rel="stylesheet" href="assets/css/style.css"/>
+</head>
+<body>
+  <form action="#" method="post">
+    <fieldset class="identity">
+      <legend class="identity">Votre identité</legend>
+      <ol>
+        <li>
+          <label>Nom :
+            <input type="text" id="name" name="name" placeholder="Nom"/>
+          </label>
+        </li>
+        <li>
+          <label for="forname">Prénom : </label>
+          <input type="text" name="forname" id="forname" placeholder="Prénom"/>
+        </li>
+        <li>
+          <label for="Adresse mail">Adresse mail : </label>
+          <input type="email" name="email" id="email" placeholder="Adresse mail"/>
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset class="address">
+      <legend class="address">Adresse de livraison</legend>
+      <ol>
+        <li>
+          <label for="userAddress">Adresse : </label>
+          <textarea name="userAddress" id="userAddress" rows="4" cols="20"></textarea>
+        </li>
+        <li>
+          <label for="postalCode">Code postal : </label>
+          <input type="text" name="postalCode" placeholder="code postal" id="postalCode"/>
+        </li>
+        <li>
+          <label for="city">Ville : </label>
+          <input type="text" name="city" placeholder="Ville" id="city"/>
+        </li>
+      </ol>
+    </fieldset>
+    <fieldset class="informations">
+      <legend class="informations">Informations de réglement</legend>
+      <ol>
+        <li>
+          <label for="Type de carte bancaire">Type de carte bancaire : </label>
+          <ul>
+            <li>
+              <input type="radio" name="card" id="visa"/>
+              <label for="visa">Visa</label>
+            </li>
+            <li>
+              <input type="radio" name="card" id="mastercard"/>
+              <label for="mastercard">Mastercard</label>
+            </li>
+          </ul>
+          <li>
+            <label for="cardNumber">Numéro de carte : </label>
+            <input type="text" name="cardNumber" placeholder="Numéro de carte" id="cardNumber"/>
+          </li>
+          <li>
+            <label for="securityCode">Code de sécurité : </label>
+            <input type="text" name="securityCode" placeholder="Code de sécurité" id="securityCode"/>
+          </li>
+          <li>
+            <label for="owner">Nom du titulaire : </label>
+            <input type="text" name="owner" placeholder="Nom du titulaire" id="owner"/>
+          </li>
+        </ol>
+      </fieldset>
+      <input type="submit" name="submit" value="J'achète!" id="submit"/>
+      <!-- <input type="button" name="submit" value="J'achète!" id="submit"/>
+            <button type="submit" name="submit" id="submit">J'achète!</button>
+            <button type="button" name="submit" id="submit">J'achète!</button>-->
+    </form>
   </body>
-</html>
+  </html>

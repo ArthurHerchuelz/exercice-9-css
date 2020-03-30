@@ -1,9 +1,12 @@
-.Identity{
+.identity{
   background-color: #0baac0;
 }
-.Address {
+.address {
   background-color: #b033f6;
 }
-.Informations {
+.informations {
   background-color: #f6336d;
+}
+ul {
+  list-style-type: none;
 }
